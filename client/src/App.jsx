@@ -51,7 +51,10 @@ import AdminProfile from "./pages/admin/AdminProfile.jsx";
 import SendNotification from "./pages/admin/SendNotification.jsx";
 
 function App() {
-    return (<AuthProvider> <BrowserRouter> <Routes>
+    return (
+        <AuthProvider>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
+                <Routes>
         {/* ================= PUBLIC ROUTES ================= */}
 
 
